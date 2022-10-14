@@ -1,0 +1,94 @@
+* {
+  font-family: "Trebuchet MS";
+}
+
+h3 {
+  margin-top: 50px;
+  text-align: center;
+
+  font-size: 20pt;
+}
+
+.title {
+  display: flex;
+  border-bottom: 3px solid black;
+  max-height: 40px;
+}
+.title > h4 {
+  margin: 10px;
+}
+button {
+  background-color: rgba(225, 225, 225, 0.837);
+  padding: 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+#title button {
+  margin-bottom: 2px;
+}
+button:hover {
+  background-color: aliceblue;
+}
+
+#detail {
+  display: flex;
+  border-bottom: 1.5px solid black;
+}
+
+#list h5 {
+  margin-left: 20px;
+}
+
+#title input {
+  margin-left: 10px;
+  width: 45%;
+  border: 0.5px solid rgb(230, 229, 229);
+  border-radius: 10px;
+  background-color: transparent;
+  padding-left: 10px;
+  margin-bottom: 2px;
+}
+
+#deleteaddtodo {
+  background-color: red;
+}
+
+.container {
+  margin: auto;
+  width: 50%;
+}
+
+input[type="checkbox"] {
+  margin: 15px 10px 0 10px;
+  height: 20px;
+  width: 20px;
+  background-color: rgb(230, 229, 229);
+}
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + p {
+  transition: width 1s ease-out;
+  text-decoration: line-through;
+}
+
+#alertdanger {
+  margin-top: 10px;
+  text-align: center;
+  color: red;
+}
+
+#detail button {
+  font-size: 10pt;
+}
+#list #remove {
+  margin-left: auto;
+  padding: 10px;
+  color: red;
+  background-color: transparent;
+}
