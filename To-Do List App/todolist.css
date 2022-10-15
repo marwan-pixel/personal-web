@@ -57,10 +57,15 @@ button:hover {
 #deleteaddtodo {
   background-color: red;
 }
-
+.main {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
 .container {
-  margin: auto;
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 input[type="checkbox"] {

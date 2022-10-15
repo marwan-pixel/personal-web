@@ -726,7 +726,11 @@ a {
   line-height: 1.5em;
   font-weight: 100;
 }
+#my-form-status {
+  color: var(--color);
 
+  margin-top: 20px;
+}
 /*
 Responsive Breakpoint
 */
@@ -938,15 +942,6 @@ Responsive Breakpoint
     z-index: 2;
   }
 
-  .sun {
-    height: 18;
-    width: 18;
-  }
-  .moon {
-    height: 18px;
-    width: 18px;
-  }
-
   .about .about-detail {
     height: 500px;
     width: 80%;
@@ -958,12 +953,20 @@ Responsive Breakpoint
     font-size: 11pt;
   }
 }
+@media screen and (max-width: 653px) {
+  .about .about-detail {
+    height: 610px;
+  }
+}
 @media screen and (max-width: 576px) {
   .about .about-detail {
     height: 600px;
   }
   .greetings .title {
     font-size: 25pt;
+  }
+  .skills_detail_top img {
+    margin-left: 20px;
   }
   .front,
   .back,

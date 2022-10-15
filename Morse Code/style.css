@@ -1,20 +1,20 @@
 .container {
-  display: block;
-  margin-left: 40%;
-  margin-top: 23%;
-  margin-right: 40%;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  font-family: "Segoe UI";
+}
+.morse {
   border: 2px solid black;
 }
 p {
   border: 2px solid black;
   border-style: dashed;
   padding-left: 5px;
-
   border-radius: 5px;
-
   width: 87%;
-
   font-size: 20pt;
   margin: 10px;
 }
@@ -30,6 +30,7 @@ input {
 }
 button {
   height: 3em;
+  width: 4em;
   border-width: 0;
   border-radius: 5px;
 }

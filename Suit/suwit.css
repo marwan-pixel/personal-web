@@ -158,12 +158,13 @@ h3 {
 }
 
 .container {
-  width: 600px;
-  margin: auto;
-  padding: 20px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
-
+.skor {
+  display: flex;
+  justify-content: space-evenly;
+}
 .area-komputer {
   width: 560px;
   height: 250px;
@@ -197,13 +198,9 @@ h3 {
 .skorsaya {
   width: 160px;
   height: 40px;
-  top: 4%;
-  left: 6%;
   border-radius: 40px;
   background-color: white;
   border: 3px solid salmon;
-  position: absolute;
-  z-index: 2;
   text-align: center;
   font-size: 30px;
   color: salmon;
@@ -214,13 +211,11 @@ h3 {
 .skormusuh {
   width: 160px;
   height: 40px;
-  top: 4%;
-  right: 6%;
+
   border-radius: 40px;
   border: 3px solid salmon;
   background-color: white;
-  position: absolute;
-  z-index: 2;
+
   text-align: center;
   font-size: 30px;
   color: salmon;
@@ -236,7 +231,7 @@ h3 {
   position: absolute;
   left: 50%;
   margin-left: -75px;
-  top: 50%;
+  top: 35%;
   margin-top: -30px;
   background-color: white;
   border-radius: 30px;

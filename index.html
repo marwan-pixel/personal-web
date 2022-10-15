@@ -180,11 +180,6 @@
           <img src="./assets/code.svg" class="icon1" alt="" />
           <div class="skills_detail_title">Frontend Developer</div>
         </div>
-        <!-- <div class="range">
-          <h3>0</h3>
-          <h3>Range</h3>
-          <h3>100</h3>
-        </div> -->
         <div class="skills_list">
           <div class="skills_data">
             <div class="skills_name">HTML</div>
@@ -227,11 +222,6 @@
           <img src="./assets/server-connection.svg" class="icon1" alt="" />
           <div class="skills_detail_title">Backend Developer</div>
         </div>
-        <!-- <div class="range">
-          <h3>0</h3>
-          <h3>Range</h3>
-          <h3>100</h3>
-        </div> -->
         <div class="skills_list">
           <div class="skills_data">
             <div class="skills_name">PHP</div>
@@ -244,11 +234,6 @@
           <img src="./assets/language.svg" class="icon1" alt="" />
           <div class="skills_detail_title">Bahasa Asing</div>
         </div>
-        <!-- <div class="range">
-          <h3>0</h3>
-          <h3>Range</h3>
-          <h3>100</h3>
-        </div> -->
         <div class="skills_list">
           <div class="skills_data">
             <div class="skills_name">B. Inggris</div>
@@ -361,7 +346,7 @@
       Ada yang ingin disampaikan? Bisa melalui <i>form</i> di bawah ini :
     </h3>
     <div class="form">
-      <form action="https://formsubmit.co/el/xodibi" method="POST">
+      <form action="https://formspree.io/f/mjvzoqwq" id="form" method="POST">
         <div class="row-form">
           <label for="nama">Nama </label>
           <input type="text" name="nama" id="username" required />
@@ -370,17 +355,19 @@
           <label for="nama">Email </label>
           <input type="email" name="email" id="email" required />
         </div>
+
         <div class="row-form">
           <label for="nama">Pesan </label>
           <textarea
-            name="textarea"
-            id="textarea"
+            name="pesan"
+            id="pesan"
             cols="86"
             rows="10"
             required
           ></textarea>
         </div>
         <button type="submit">Kirim</button>
+        <p id="my-form-status"></p>
         <div class="icon1">
           <a href="https://github.com/marwan-pixel"
             ><img src="./assets/github.svg" alt=""
@@ -388,10 +375,7 @@
           <a href="https://www.instagram.com/marwansetchiawan/"
             ><img src="./assets/instagram.svg" alt=""
           /></a>
-          <a
-            href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJvqsKgwwBQhNjKtJlXwpVkgsQSDknsnXxWgKMPHzJDDVqKSjmBGrlsZNTMkJtHZKbmhGDV"
-            ><img src="./assets/gmail.svg" alt=""
-          /></a>
+
           <a href="https://www.linkedin.com/in/marwan-hadid-6719a7237/"
             ><img src="./assets/linkedin.svg" alt=""
           /></a>
@@ -402,6 +386,6 @@
   <section class="footer">
     <h5>&copy Built with love and patience by Marwan Hadid</h5>
   </section>
+
   <script src="script.js"></script>
-  <script src=" https://smtpjs.com/v3/smtp.js"></script>
 </html>
