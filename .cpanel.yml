@@ -10,3 +10,4 @@ deployment:
     - /bin/cp -R quizapp $DEPLOYPATH
     - /bin/cp -R To-Do List App $DEPLOYPATH
     - /bin/cp -R Morse Code $DEPLOYPATH
+    - /bin/cp -R Portfolio $DEPLOYPATH
