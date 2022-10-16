@@ -6,8 +6,4 @@ deployment:
     - /bin/cp style.css $DEPLOYPATH
     - /bin/cp script.js $DEPLOYPATH
     - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R Suit $DEPLOYPATH
-    - /bin/cp -R quizapp $DEPLOYPATH
-    - /bin/cp -R To-Do List App $DEPLOYPATH
-    - /bin/cp -R Morse Code $DEPLOYPATH
     - /bin/cp -R Portfolio $DEPLOYPATH
