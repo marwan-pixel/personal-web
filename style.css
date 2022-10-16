@@ -241,14 +241,14 @@ h4 {
 .front {
   z-index: 1;
   backface-visibility: hidden;
-  border-left: 2px solid var(--color);
+
   display: flex;
   justify-content: flex-start;
 }
 
 .back {
   z-index: 0;
-  border-left: 3px solid var(--color);
+  border-left: 2px solid var(--color);
 }
 .front-content h4 {
   margin-left: 15px;
@@ -284,6 +284,7 @@ h4 {
   justify-content: flex-start;
   align-items: center;
 }
+
 .eyes h3 {
   color: black;
 }

@@ -1,0 +1,12 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/gebs6878/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp script.js $DEPLOYPATH
+    - /bin/cp -R assets $DEPLOYPATH
+    - /bin/cp -R Suit $DEPLOYPATH
+    - /bin/cp -R quizapp $DEPLOYPATH
+    - /bin/cp -R To-Do List App $DEPLOYPATH
+    - /bin/cp -R Morse Code $DEPLOYPATH
