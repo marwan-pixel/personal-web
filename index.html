@@ -4,9 +4,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="./assets/LogoAnimation/logoblack3.png" />
+    <link rel="icon" href="./assets/LogoAnimation/logoblack3.svg" />
     <title>Portfolio Website</title>
   </head>
+
   <body>
     <section id="Awal">
       <nav>
@@ -34,28 +35,28 @@
           <span></span>
         </div>
       </nav>
+
       <div id="Home">
-        <div class="arrow-down"></div>
-        <div class="power">
-          <input type="checkbox" name="" id="powerOn" value="ON" />
-        </div>
         <div class="bg-Hello">
-          <img src="./assets/LogoAnimation/logoblack3.png" id="image" alt="" />
-          <div class="change-color">
-            <div class="check" id="blue" title="#5fb0ff">
-              <input type="checkbox" name="" id="" />
-            </div>
-            <div class="check" id="green" title="rgb(14, 173, 178)">
-              <input type="checkbox" name="" id="" />
-            </div>
-            <div class="check" id="red" title="#e06666">
-              <input type="checkbox" name="" id="" />
-            </div>
-            <div class="check" id="orange" title="rgb(228, 165, 126)">
-              <input type="checkbox" name="" id="" />
-            </div>
-            <div class="check" id="pink" title="pink">
-              <input type="checkbox" name="" id="" />
+          <img src="./assets/LogoAnimation/logoblack3.svg" id="image" alt="" />
+          <div class="color-pallete">
+            <h4>Pick Color</h4>
+            <div class="change-color">
+              <div class="check" id="blue" title="#5fb0ff">
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="check" id="green" title="rgb(14, 173, 178)">
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="check" id="red" title="#e06666">
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="check" id="orange" title="rgb(228, 165, 126)">
+                <input type="checkbox" name="" id="" />
+              </div>
+              <div class="check" id="pink" title="pink">
+                <input type="checkbox" name="" id="" />
+              </div>
             </div>
           </div>
         </div>
@@ -74,7 +75,25 @@
       <h1>Tentang Saya</h1>
       <div class="borderbottom"></div>
     </div>
-
+    <div class="guide">
+      <h3>Klik di sini</h3>
+      <svg
+        version="1.1"
+        id="Capa_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 490 490"
+        style="enable-background: new 0 0 490 490"
+        xml:space="preserve"
+      >
+        <path
+          d="M490,254.451V0.419L245,235.953L0,0.419v254.032l245,235.131L490,254.451z M30.625,72.346L245,278.421L459.375,72.346
+	v169.036L245,447.143L30.625,241.381V72.346z"
+        />
+      </svg>
+    </div>
     <div class="about-detail">
       <div class="paper" id="p1">
         <div class="front">
@@ -154,14 +173,16 @@
                 src="./assets/LogoAnimation/logoblack3.svg"
                 class="aboutImg"
                 alt=""
+                id="image"
               />
             </div>
             <h4>
               Perkenalkan, dia adalah Mogus. Karakter ini terinspirasi dari
               salah satu <i>game</i> terkenal, <i>Among Us</i>, yang di mana ada
-              sebuah plesetan pada namanya menjadi Amogus. Dialah yang menjadi
-              maskot untuk <i>website</i> ini. Dia bisa berubah warna sesuai
-              <i>color pallete</i> yang dipilih.
+              sebuah plesetan pada namanya menjadi Amogus. Walaupun tidak
+              terlihat mirip dan lebih menyerupai sebuah bus, sumber inspirasi
+              ini tetap berasal dari <i>Among Us</i>. Dia dibuat sebagai maskot
+              untuk <i>website</i> ini.
             </h4>
           </div>
         </div>
@@ -200,7 +221,7 @@
         </div>
         <div class="skills_list">
           <div class="skills_data">
-            <div class="skills_name">React</div>
+            <div class="skills_name">React JS</div>
           </div>
           <div class="skills_bar" id="react"></div>
         </div>
@@ -227,6 +248,12 @@
             <div class="skills_name">PHP</div>
           </div>
           <div class="skills_bar" id="php"></div>
+        </div>
+        <div class="skills_list">
+          <div class="skills_data">
+            <div class="skills_name">Codeigniter</div>
+          </div>
+          <div class="skills_bar" id="codeigniter"></div>
         </div>
       </div>
       <div class="skills_detail">

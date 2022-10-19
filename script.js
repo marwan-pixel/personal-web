@@ -1,17 +1,20 @@
 const body = document.querySelector("body");
-const nav = document.querySelector("nav ");
-
+const nav = body.querySelector("nav");
+const sections = document.querySelectorAll("section[id]");
 const checkbox = document.querySelector("#toggle");
 const aActive = nav.querySelectorAll("a");
 const img = body.querySelector("#image");
-const contactMe = document.getElementById("contactMe");
-const footer = document.querySelector(".footer");
 
 const menuToggle = document.querySelector(".menu-toggle input");
-const powerButton = document.querySelector("#powerOn");
 const book = document.querySelector(".about-detail");
 const paper1 = document.querySelector("#p1");
 const paper2 = document.querySelector("#p2");
+const color = localStorage.getItem("color");
+const colorImage = localStorage.getItem("colorImage");
+if (color || colorImage) {
+  img.className = colorImage;
+  document.documentElement.style.setProperty("--color", color);
+}
 window.addEventListener("load", () => {
   if (window.innerWidth <= 950) {
     paper1.querySelector(".front").innerHTML = b1toF1();
@@ -201,7 +204,7 @@ function f2toB1() {
             <h2>The Mogus</h2>
             <div class="bg">
               <img
-                src="./assets/LogoAnimation/logoblack3.png"
+                src="./assets/LogoAnimation/logoblack3.svg"
                 class="aboutImg"
                 alt=""
            
@@ -220,32 +223,16 @@ function f2toB1() {
 menuToggle.addEventListener("click", function () {
   nav.querySelector("ul").classList.toggle("slide");
 });
-powerButton.addEventListener("click", () => {
-  console.log(powerButton.value);
-  if (powerButton.value === "ON") {
-    powerButton.value = "OFF";
-    img.style.display = "none";
-    body.querySelector(".change-color").style.display = "none";
-
-    document.querySelector(".bg-Hello").style.backgroundColor = "black";
-  } else {
-    powerButton.value = "ON";
-    img.style.display = "block";
-    body.querySelector(".change-color").style.display = "flex";
-    document.querySelector(".bg-Hello").style.backgroundColor = "white";
-  }
-  console.log(powerButton.value);
-});
 
 body.querySelectorAll(".check").forEach((item) => {
   item.addEventListener("click", () => {
     img.className = item.id;
-
+    document.querySelector("img#image").className = item.id;
     document.documentElement.style.setProperty("--color", item.title);
+    localStorage.setItem("color", item.title);
+    localStorage.setItem("colorImage", item.id);
   });
 });
-
-const sections = document.querySelectorAll("section[id]");
 
 window.addEventListener("scroll", navHighLighter);
 function navHighLighter() {
