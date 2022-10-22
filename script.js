@@ -83,10 +83,9 @@ function b1() {
               Saya adalah mahasiswa jurusan teknik informatika dari
               Universitas Binaniaga Indonesia. Saya sangat tertarik dengan
               programming dan desain, khususnya desain web. Tak hanya itu,
-              saya juga senang mempelajari berbagai bahasa, baik itu bahasa
+              saya juga senang memplajari berbagai bahasa, baik itu bahasa
               pemrograman serta bahasa asing.
             </h4>
-<<<<<<< HEAD
             <h2>Hobi</h2>
             <div class="hobby_list">
               <div class="hobby_data">
@@ -107,10 +106,6 @@ function b1() {
               <div class="hobby_bar" id="jogging"></div>
             </div>
         </div>
-=======
-          </div>
-          
->>>>>>> dceccfe4842d19afd8e00da14c88cf7399bcf7b3
           </div>
           
        `;
@@ -129,11 +124,10 @@ function b1toF1() {
               Saya adalah mahasiswa jurusan teknik informatika dari
               Universitas Binaniaga Indonesia. Saya sangat tertarik dengan
               programming dan desain, khususnya desain web. Tak hanya itu,
-              saya juga senang mempelajari berbagai bahasa, baik itu bahasa
+              saya juga senang memplajari berbagai bahasa, baik itu bahasa
               pemrograman serta bahasa asing.
             </h4>
           </div>
-<<<<<<< HEAD
           <div class="hobby">
           <h2>Hobi</h2>
             <div class="hobby_list">
@@ -155,9 +149,6 @@ function b1toF1() {
               <div class="hobby_bar" id="skipping"></div>
             </div>
             </div>
-=======
-          
->>>>>>> dceccfe4842d19afd8e00da14c88cf7399bcf7b3
         </div>
        `;
 }
@@ -165,12 +156,8 @@ function b1toF1() {
 function f2toB1() {
   return `
   <div id="b1" class="back-content">
-<<<<<<< HEAD
           
             <h2 class="bio">Bio</h2>
-=======
-            <h4 class="bio">Bio</h4>
->>>>>>> dceccfe4842d19afd8e00da14c88cf7399bcf7b3
           <div class="tahun">
             <div class="tahun-detail">
               <div class="circle"></div>
@@ -212,10 +199,7 @@ function f2toB1() {
               Melanjutkan pendidikan kuliah di Universitas Binaniaga Indonesia
             </h4>
           </div>
-<<<<<<< HEAD
           </div>
-=======
->>>>>>> dceccfe4842d19afd8e00da14c88cf7399bcf7b3
           </div>`;
 }
 
