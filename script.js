@@ -273,7 +273,7 @@ async function handleSubmit(event) {
   })
     .then((response) => {
       if (response.ok) {
-        status.innerHTML = "Thanks for your submission!";
+        status.innerHTML = "Terima kasih atas pesannya!";
         form.reset();
       } else {
         response.json().then((data) => {
@@ -282,13 +282,14 @@ async function handleSubmit(event) {
               .map((error) => error["message"])
               .join(", ");
           } else {
-            status.innerHTML = "Oops! There was a problem submitting your form";
+            status.innerHTML =
+              "Oops! Sepertinya ada masalah saat mengirimkan pesan";
           }
         });
       }
     })
     .catch((error) => {
-      status.innerHTML = "Oops! There was a problem submitting your form";
+      status.innerHTML = "Oops! Ada masalah saat mengirimkan pesan Anda";
     });
 }
 form.addEventListener("submit", handleSubmit);
