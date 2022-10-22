@@ -47,6 +47,7 @@ nav {
   transition: 0.3s;
   background-color: white;
   z-index: 4;
+  font-weight: bold;
 }
 
 nav ul {
@@ -59,13 +60,11 @@ nav ul {
 nav ul li a {
   padding: 25;
   cursor: pointer;
-  font-weight: 100;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
-  font-weight: bold;
 }
 
 .menu-toggle {
@@ -244,7 +243,34 @@ h4 {
   border-radius: 20px;
   cursor: pointer;
 }
+.about .hobby_list {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
+.about h5 {
+  font-weight: 100;
+  font-size: 12pt;
+  text-align: left;
+}
+.about .hobby_bar {
+  margin-top: 10;
+  margin-bottom: 10;
+  height: 15px;
+
+  background-color: var(--color);
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+.about #reading {
+  width: 85%;
+}
+.about #jogging {
+  width: 70%;
+}
+.about #skipping {
+  width: 75%;
+}
 .paper {
   border-radius: 20px;
   position: absolute;
@@ -352,7 +378,7 @@ h4 {
 }
 
 .bg .bgAbout {
-  height: 500;
+  height: 550;
   position: absolute;
 }
 
@@ -462,6 +488,8 @@ h4 {
   transition: 0.3s;
   height: 200;
   z-index: 3;
+  border: 2px solid var(--color);
+  border-radius: 20px;
 }
 
 .bg {
@@ -490,8 +518,6 @@ h4 {
 }
 
 .bio {
-  margin-top: -10px;
-  border-bottom: 1px solid black;
 }
 
 .tahun {
@@ -507,7 +533,7 @@ h4 {
 .tahun h4 {
   margin-right: 20;
   margin-top: -15;
-  font-size: 16;
+  font-size: 18;
 }
 
 #Skills {
@@ -908,6 +934,12 @@ Responsive Breakpoint
 }
 
 @media screen and (max-width: 950px) {
+  #f1 {
+    align-items: flex-start;
+  }
+  #f1 .hobby {
+    width: 100%;
+  }
   .back-content {
     transform: rotateY(-180deg);
   }
@@ -992,7 +1024,7 @@ Responsive Breakpoint
     margin-left: 5%;
     margin-right: 5%;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     padding-bottom: 1em;
   }
 
@@ -1029,9 +1061,9 @@ Responsive Breakpoint
     justify-content: space-evenly;
   }
 
-  .bio {
+  /* .bio {
     flex-direction: row;
-  }
+  } */
 
   nav ul .active {
     padding: 20;
@@ -1106,26 +1138,26 @@ Responsive Breakpoint
   }
 
   .about .about-detail {
-    height: 500px;
+    height: 680px;
     width: 80%;
   }
 
   .front,
   .back,
   .tahun h4 {
-    font-size: 11pt;
+    font-size: 15pt;
   }
 }
 
 @media screen and (max-width: 653px) {
   .about .about-detail {
-    height: 610px;
+    height: 680px;
   }
 }
 
 @media screen and (max-width: 576px) {
   .about .about-detail {
-    height: 600px;
+    height: 630px;
   }
 
   .greetings .title {
@@ -1143,7 +1175,7 @@ Responsive Breakpoint
   .front,
   .back,
   .tahun h4 {
-    font-size: 9pt;
+    font-size: 11pt;
   }
 
   #Skills {
@@ -1156,10 +1188,6 @@ Responsive Breakpoint
     display: flex;
 
     flex-direction: column;
-  }
-
-  .skills_name {
-    text-align: center;
   }
 
   .skills_detail_top {
@@ -1218,7 +1246,11 @@ Responsive Breakpoint
     padding-bottom: 6em;
   }
 }
-
+@media screen and (max-width: 354px) {
+  .about .about-detail {
+    height: 690px;
+  }
+}
 @media screen and (max-width: 280px) {
   .bio h1 {
     font-size: 18pt;
